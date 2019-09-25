@@ -1,0 +1,40 @@
+﻿@model Tennis2.Models.ClassMemberCoach
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>ClassMemberCoach</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CoachName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CoachName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MemberName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MemberName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ClassName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ClassName)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

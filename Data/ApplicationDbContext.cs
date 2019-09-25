@@ -15,5 +15,7 @@ namespace Tennis2.Data
         }
         public DbSet<Tennis2.Models.member> member { get; set; }
         public DbSet<Tennis2.Models.coach> coach { get; set; }
+        public DbSet<Tennis2.Models.schedule> schedule { get; set; }
+        public DbSet<Tennis2.Models.ClassMemberCoach> ClassMemberCoach { get; set; }
     }
 }

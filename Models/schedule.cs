@@ -14,6 +14,6 @@ namespace Tennis2.Models
         [DataType(DataType.Date)]
         public DateTime Date { get; set; }
         [DataType(DataType.Time)]
-        public TimestampAttribute Time { get; set; }
+        public DateTime Time { get; set; }
     }
 }
